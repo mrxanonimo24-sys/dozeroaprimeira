@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia do Zero à Primeira Venda | EUROS PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* HERO */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background:
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(10, 10, 10, 0.95)),
+                url('https://i.ibb.co/rf0hkTnK/Gemini-Generated-Image-obdufnobdufnobdu.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            background: linear-gradient(90deg, #d4af37, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            margin-bottom: 15px;
+            color: #d4af37;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.15rem);
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .cta {
+            display: inline-block;
+            background: linear-gradient(90deg, #d4af37, #b8962e);
+            color: #000;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.35);
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 60px rgba(212, 175, 55, 0.55);
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 80px 20px;
+            background: #000;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border-radius: 18px;
+            padding: 26px;
+            transition: transform .2s ease, background .2s ease;
+
+            /* Adicione isto para a borda colorida: */
+            border: 2px solid transparent;
+            /* Cria o espaço da borda */
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)),
+                linear-gradient(to right, #664e00, #000000);
+            /* As cores da sua borda aqui */
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.09);
+        }
+
+        .price {
+            font-size: clamp(2.4rem, 6vw, 3rem);
+            font-weight: 700;
+            color: #d4af37;
+        }
+
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            font-size: .9rem;
+            color: #888;
+            background: #000;
+        }
+
+        /* MOBILE AJUSTES */
+        @media (max-width: 600px) {
+            header {
+                padding: 80px 16px;
+            }
+
+            .cta {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Guia do Zero à Primeira Venda</h1>
+            <p>O método simples, direto e replicável para fazer sua primeira venda online — mesmo começando do absoluto
+                zero.</p>
+            <a href="#comprar" class="cta">Quero fazer minha primeira venda</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>O que você vai aprender</h2>
+            <div class="grid">
+                <div class="card">Mentalidade correta para vender sem travar</div>
+                <div class="card">Como criar um produto simples que vende</div>
+                <div class="card">Onde divulgar sem depender de anúncios</div>
+                <div class="card">Roteiro prático de conversa de venda</div>
+                <div class="card">Estratégia clara de Instagram para gerar vendas</div>
+                <div class="card">Como repetir o processo e escalar</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Para quem é este guia</h2>
+            <div class="grid">
+                <div class="card">Iniciantes no digital</div>
+                <div class="card">Quem nunca vendeu online</div>
+                <div class="card">Prestadores de serviço</div>
+                <div class="card">Criadores de conteúdo pequeno</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comprar">
+        <div class="container" style="text-align:center">
+            <h2>Invista na sua primeira venda</h2>
+            <p class="price">R$ 19,90</p>
+            <p>Acesso imediato ao guia + método validado</p>
+            <a href="#" class="cta">Comprar agora</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>EUROS PRO © 2026 — Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
